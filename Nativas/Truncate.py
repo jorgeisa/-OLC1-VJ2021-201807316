@@ -17,6 +17,9 @@ class Truncate(Funcion):
         if simbolo is None:
             return Excepcion("Semantico", "> Excepcion TRUNCATE: No se encontro parametro. <", self.fila, self.columna)
 
+        if isinstance(simbolo.getValor(), list):
+            return Excepcion("Semantico", "> Excepcion TRUNCATE: es un arreglo <", self.fila, self.columna)
+
         if simbolo.getTipo() is not TIPO.DECIMAL and simbolo.getTipo() is not TIPO.ENTERO:
             return Excepcion("Semantico", "> Excepcion TRUNCATE: Tipo no es decimal o entero. <", self.fila, self.columna)
 

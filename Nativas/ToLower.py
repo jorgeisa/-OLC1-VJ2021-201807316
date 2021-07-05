@@ -17,6 +17,9 @@ class ToLower(Funcion):
         if simbolo is None:
             return Excepcion("Semantico", "> Excepcion toLower: No se encontro parametro. <", self.fila, self.columna)
 
+        if isinstance(simbolo.getValor(), list):
+            return Excepcion("Semantico", "> Excepcion TOLOWER: es un arreglo <", self.fila, self.columna)
+
         if simbolo.getTipo() is not TIPO.CADENA:
             return Excepcion("Semantico", "> Excepcion TOLOWER: Tipo no es cadena. <", self.fila, self.columna)
 
