@@ -281,7 +281,7 @@ class MainScreen:
     # ABRIR PDF y HTML EN EL NAVEGADOR
     def menu_open_pdfhtml(self):
         pathFile = filedialog.askopenfilename(title="Seleccione archivo (Abrir Navegador)", filetypes=
-        (("PDF Files", "*.pdf"), ("HTML Files", "*.html")))
+        (("PDF Files", "*.pdf"), ("HTML Files", "*.html"), ("SVG Files", "*.svg")))
         if pathFile != "":
             print("Su archivo es " + pathFile)
             webbrowser.open_new_tab(pathFile)

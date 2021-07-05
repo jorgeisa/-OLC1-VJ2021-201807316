@@ -874,9 +874,10 @@ def realizar_dot(astTree):
 
     dirname = os.path.dirname(__file__)
     direcc = os.path.join(dirname, 'ast.dot')
-    file = open(direcc, "w+")
+    file = open(direcc, "w+", encoding="utf-8")
     file.write(grafo)
     file.close()
+    os.system('dot -T svg -o ast.svg ast.dot')
     os.system('dot -T pdf -o ast.pdf ast.dot')
 
 

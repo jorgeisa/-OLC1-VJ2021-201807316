@@ -1,1 +1,4 @@
 https://github.com/jorgeisa/OLC1-P1-VJ2021-201807316
+
+Debido a un error en una rama tuve que crear otro repositorio:
+https://github.com/jorgeisa/OLC1-2P1-VJ2021-201807316
