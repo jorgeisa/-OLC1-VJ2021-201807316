@@ -1,4 +1,5 @@
 #*
+
    DECLARAMOS UN VECTOR DE 15 POSICIONES
    SE IMPRIMRÁ Y POSTERIORMENTE SE ORDENARÁ
 *#
@@ -59,9 +60,9 @@ main(){
 
 func ParoImpar(int a) {
     if (par(a) == 1) { # El número es Par
-        print("El numero '" + a + "'" + " es Par");
+        print("El numero \'" + a + "\'" + " es Par");
     } else { # El número es impar
-        print("El numero '" + a + "'" + " es Impar");
+        print("El numero \'" + a + "\'" + " es Impar");
     }
 }
 
@@ -252,4 +253,6 @@ func ackerman(int m, int n){
         return ackerman(m-1, ackerman(m, n-1))
     }
 }
+
+    
 

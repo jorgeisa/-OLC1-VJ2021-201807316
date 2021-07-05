@@ -18,6 +18,10 @@ class Length(Funcion):
         if simbolo is None:
             return Excepcion("Semantico", "> Excepcion LENGTH: No se encontro parametro. <", self.fila, self.columna)
 
+        if isinstance(simbolo.getValor(), list):
+            self.tipo = TIPO.ENTERO
+            return len(simbolo.getValor())
+
         if simbolo.getTipo() is not TIPO.CADENA:
             return Excepcion("Semantico", "> Excepcion LENGTH: Tipo no es cadena o arreglo. <", self.fila, self.columna)
 

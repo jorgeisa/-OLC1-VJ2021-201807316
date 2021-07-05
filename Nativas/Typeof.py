@@ -17,7 +17,10 @@ class Typeof(Funcion):
         simbolo = table.getTabla("Typeof##Parametro1")
         if simbolo is None:
             return Excepcion("Semantico", "> Excepcion TYPEOF: No se encontro parametro. <", self.fila, self.columna)
-
+        # Si el simbolo es un arreglo
+        if isinstance(simbolo.getValor(), list):
+            self.tipo = TIPO.CADENA
+            return str("ARREGLO -> " + self.obtenerTipo(simbolo.getTipo()))
         self.tipo = TIPO.CADENA
         return self.obtenerTipo(simbolo.getTipo())
 

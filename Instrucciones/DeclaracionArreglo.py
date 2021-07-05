@@ -39,6 +39,8 @@ class DeclaracionArreglo(Instruccion):
             # Colocandole True a la bandera del simbolo para indicar que es un arreglo
             simbolo.setBanderaArreglo(True)
             simbolo.setDimensionArreglo(self.dimensiones)
+            longitud = self.obtenerLongitud(tree, table, self.lista_expresiones)
+            simbolo.setLongitudArreglo(longitud)
             # Verificando que se haya agregado a la tabla bien.
             result = table.setTabla(simbolo)
             if isinstance(result, Excepcion): return result
@@ -64,6 +66,8 @@ class DeclaracionArreglo(Instruccion):
             simbolo = Simbolo(str(self.identificador), self.tipo_dato1, self.fila, self.columna, simbolo_2.getValor())
             simbolo.setBanderaArreglo(True)
             simbolo.setDimensionArreglo(self.dimensiones)
+            longitud = simbolo_2.getLongitudArreglo()
+            simbolo.setLongitudArreglo(longitud)
             result = table.setTabla(simbolo)
             if isinstance(result, Excepcion): return result
         return None
@@ -83,6 +87,13 @@ class DeclaracionArreglo(Instruccion):
             return "Null"
         elif tipo == TIPO.ARREGLO:
             return "Array"
+
+    def obtenerLongitud(self, tree, table , listaExpresiones):
+        longitud = 1
+        for expresion in listaExpresiones:
+            numero = expresion.interpretar(tree, table)
+            longitud = longitud * numero
+        return longitud
 
     def getNodo(self):
         nodo = NodoArbol("DECLARACION ARREGLO")
