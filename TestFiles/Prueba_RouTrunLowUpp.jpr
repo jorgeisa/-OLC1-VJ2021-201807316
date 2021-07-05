@@ -1,0 +1,107 @@
+#*
+
+Archivo prueba para probar casteos y funciones nativas (toLower(), toUpper(), truncate, etc)
+
+*#
+
+main(){
+        var x =1.5
+        var y = round(x)
+        var z;
+        print("valor decimal "+x)
+        print("valor redondeado "+y)
+        print("Tipo de dato del valor inicial : "+typeof(x))
+        print("Tipo de dato del valor redondeado : "+typeof(y))
+        print("Tipo de dato del valor que no se asigno un valor : "+typeof(z))
+        print("");
+        var longitud = length("Holas" + "Holas");
+        print(longitud);
+
+        var variable_truncate1 = 100.5;
+        print("Truncate de 100.5: " + truncate(variable_truncate1));
+
+        var variable_round55 = 400;
+        print("Round de 400: " + round(variable_round55));
+
+        var variable_round56 = 405.0;
+        print("Round de 405.0: " +round(variable_round56));
+
+        var variable_round = 12.555;
+        print("Round de 12.555: " +round(variable_round));
+
+        var variable_round3 = 5.5;
+        print("Round de 5.5: " +round(variable_round3));
+
+        var variableint = 500.256468;
+        print("Truncate de Suma: " +truncate(funcionSuma(50.3666 , variableINT)));
+
+        print("");
+        var Cadena1= toUpPer("HoLa, esta Es una Cadena Solo MayusCulas :p")
+        print(Cadena1)
+        var CaDENa2= toLoWer("HoLa, esta Es una Cadena Solo MINUSCULAS. oSI OsI\n")
+        print(CaDENa2)
+        var Cadena4= toUpper("HoLa, esta Es una Cadena2 Solo MayusCulas :p")
+        print(cadena4)
+        var CaDENa5= toLower("HoLa, esta Es una Cadena2 Solo MINUSCULAS. oSI OsI\n")
+        print(cadena5)
+        var Cadena6= ToUpper("HoLa, esta Es una Cadena3 Solo MayusCulas :p\n")
+        print(Cadena6)
+        var CaDENa7= ToLower("HoLa, esta Es una Cadena3 Solo MINUSCULAS. oSI OsI\n")
+        print(cadena7)
+
+        Prueb("holi-mayUSCulas","hOLi-MinuSCUla")
+        var ala = toUpper(10+10+10 + "Hola");
+        print(toUpPer(retornarCadena("Cadena1")));
+        print(tOlower(retornarCadena("Cadena2")));
+  }
+
+
+func Prueb(string mayuscula, string minuscula){
+        var m1=toUpper(mayuscula)
+        var m2=toLoWer(minuscula)
+        print("desde funcion "+ m1)
+        print("desde funcion "+m2)
+}
+
+func retornarCadena(string cadenaPrueba){
+    return cadenaPrueba + " - Esta es una concatenacion de la CADENA."
+}
+
+func funcionSuma(double a, double b){
+
+    return a + b;
+}
+
+#* SALIDA ESPERADA
+
+valor decimal 1.5
+valor redondeado 2
+Tipo de dato del valor inicial : DOUBLE
+Tipo de dato del valor redondeado : INT
+Tipo de dato del valor que no se asigno un valor : NULL
+
+10
+Truncate de 100.5: 100
+Round de 400: 400
+Round de 405.0: 405
+Round de 12.555: 13
+Round de 5.5: 6
+Truncate de Suma: 550
+
+HOLA, ESTA ES UNA CADENA SOLO MAYUSCULAS :P
+hola, esta es una cadena solo minusculas. osi osi
+
+HOLA, ESTA ES UNA CADENA2 SOLO MAYUSCULAS :P
+hola, esta es una cadena2 solo minusculas. osi osi
+
+HOLA, ESTA ES UNA CADENA3 SOLO MAYUSCULAS :P
+
+hola, esta es una cadena3 solo minusculas. osi osi
+
+desde funcion HOLI-MAYUSCULAS
+desde funcion holi-minuscula
+CADENA1 - ESTA ES UNA CONCATENACION DE LA CADENA.
+cadena2 - esta es una concatenacion de la cadena.
+
+
+*#

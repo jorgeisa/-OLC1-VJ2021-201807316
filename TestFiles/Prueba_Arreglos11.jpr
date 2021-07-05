@@ -1,0 +1,31 @@
+main(){
+    int[] arr1 = new int[4];
+    arr1 [0] = 78;
+
+    arreglovalor(arr1);
+
+}    
+
+func arreglovalor(int [] arreglo){
+    print("Imprimiendo valores actuales del arreglo: (solo pos. 0 con valor 10)");
+    for(var i = 0; i<4; i++){
+    	print("El valor es " + arreglo[i]);
+    }
+    arreglo[0]=7800;
+}
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+

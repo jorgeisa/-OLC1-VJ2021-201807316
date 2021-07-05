@@ -1,0 +1,402 @@
+
+
+main(){
+    print("--------------------------- PRUEBA DEL CONTINUE ------------------------------")
+    print("--------- CONTINUE - FOR ---------------");
+    for (var i = 0; i<9; i++){
+        if(i == 5){
+            print("Te saltaste este numero pa\' -> " + i);
+            continue;
+        }
+        print(i);
+    }
+
+    var j = 0
+    print("");
+    print("--------- CONTINUE - WHILE ---------------");
+    while(j < 9){
+        if(j == 5){
+            print("Te saltaste este numero pa\' -> " + j);
+            j++;
+            continue;
+        }
+        print(j);
+        j++;
+    }
+
+    print("--------- CONTINUE - SWITCH ---------------");
+    var opcion = 78
+
+    switch(opcion){
+        case 78:
+            continue;
+        default:
+            print("no deberia imprimirse esto.");
+    }
+
+    switch(opcion){
+        case 78:
+            return opcion;
+        default:
+            print("no deberia imprimirse esto.");
+    }
+    print("");
+
+    print("--------- CONTINUE - IF ---------------");
+    opcion = 789
+
+    if(opcion >= 450){
+        continue;
+    }
+    if(opcion >= 450){
+        return opcion
+    }
+    print("");
+
+    print("--------------------------- PRUEBAS EN FUNCIONES ------------------------------")
+    erroresSimples();
+    print(erroresSwitchFuncion(8));
+    print("");
+    print(erroresSwitchFuncion(16));
+    print("");
+    print(erroresSwitchFuncion(24));
+    print("");
+    print(erroresSwitchFuncion(32));
+    print("");
+    print(erroresSwitchFuncion(1000));
+    print("");
+    print("");
+    print("");
+
+    forWhileSwitCH();
+
+    print("")
+    print("")
+    print("")
+
+    print(ERRORESForFuncion(60));
+    print("");
+    print(ERRORESForFuncion(50));
+    print("");
+    print(erroresforfuncion(35));
+    print("");
+    print(erroresFORFuncioN(20))
+    print("");
+
+    print("----------------------------- PRUEBAS EN MAIN ---------------------------------")
+    continue;
+    break;
+    return 8;
+}
+
+func erroresSimples(){
+    print("FUNCION SUMA. Antes del error.");
+    continue;
+    break;
+    print("FUNCION SUMA. Salida");
+    print("");
+}
+
+func erroresSwitchFuncion(iNt numEro){
+
+    print("FUNCION erroresSwitchFuncion. Antes del error.");
+    switch(numero){
+        case 8:
+            print("Opción 8 del ejemplo switch: " + numero + ". Prueba continue en case. ");
+            continue;
+            return numero;
+        case 16:
+            print("Opción 16 del ejemplo switch: " + numero + ". Prueba break en case.");
+            break;
+        case 24:
+            print("Opción 24 del ejemplo switch: " + numero + ". Prueba de ambos juntos. ");
+            continue;
+            break;
+        case 32:
+            print("Opción 32 del ejemplo switch: " + numero + ". Prueba sin ambos. Ira al Default.");
+        default:
+            print("No es ningun numero xd. Ponga un numero que este en el case >:v.");
+            continue;
+    }
+    print("FUNCION erroresSwitchFuncion. Salida.");
+    return numero;
+}
+
+func erroresForFuncion(int numERO){
+    print("FUNCION erroresForFuncion. Antes del error.");
+
+    if (numero > 69 || numero < 30){
+        print("Entro al if - break");
+        break;
+    }
+    if (numero > 69 || numero < 30){
+        print("Entro al if - continue");
+        continue;
+    }
+    if (numero > 69 || numero < 30){
+        print("Entro al if - return");
+        return numero;
+    }
+
+    var i = 0;
+    if (numero == 60){
+        print("For con asignacion y decremento i--.");
+
+        # No imprime nada
+        for (i = 70; i > numero; i--){
+            continue;
+            print(i);
+        }
+    }else if(numero == 50){
+        print("For con asignacion y aumento i++")
+        for(i = 40; i<numero; i++){
+            if(i > 45){
+                if(i == 47){
+                    print("Te saltaste este numero pa\': " + i)
+                    continue;
+                }
+            }
+            print(i);
+        }
+    }else{
+        print("For con declaracion y asignacion en aumento");
+        for(var j = 40; j>numero; j = j - 1){
+            for(var k = 0; k<=8; k = k + 1){
+                if(k >= 3){
+                    if( k == 5  || k == 8 || k+1 == 4 ){
+                        continue;
+                    }
+                }
+                print(k+"-a");
+            }
+            print("El valor de j es: " + j);
+        }
+    }
+    print("FUNCION erroresForFuncion. Salida.");
+    return "El numero ingresado es : " + numero;
+}
+
+
+func forWhileSwitch(){
+    print("FUNCION forWhileSwitch. Entrada")
+
+    for(var i = 0; i<10; i++ ){
+        if(i < 5 || i > 5){
+            continue;
+        }
+        print("Solamente deberia imprimir esto 1 vez con numero actual 5,\nEl numero actual es: " + i)
+        var k = 0;
+        While(k<20){
+
+            if(k < 10){
+                k++;
+                continue;
+            }
+            switch(k){
+
+                Case 11:
+                    var a = 0;
+                    print("OYEEE ESTAS EN EL CASE 11")
+                    break;
+                Case 15:
+                    var a = 0;
+                    print("PERO BUENO, ESTAS EN EL CASO 15");
+                    break;
+
+
+                Case 16:
+                    var a = 0;
+                    print("QUE ESTA PASANDO, ESTAS EN CONTINUE, caso 16");
+                    k ++;
+                    continue;
+                    #break;
+                default:
+                    print("Estas en Default :c " + k)
+                    break;
+            }
+            k++;
+        }
+    }
+
+    switch(6){
+
+            Case 1:
+                print("OYEEE ESTAS EN EL CASE 1")
+                break;
+            Case 5:
+                print("PERO BUENO, ESTAS EN EL CASO 5");
+                break;
+
+            Case 6:
+                print("QUE ESTA PASANDO, ESTAS EN CONTINUE, caso 6");
+                continue;
+            default:
+                print("Estas en Default :c " + i)
+                break;
+    }
+    return 1;
+    continue;
+    break;
+    print("FUNCION forWhileSwitch. Salida");
+}
+
+#* SALIDA ESPERADA
+--------------------------- PRUEBA DEL CONTINUE ------------------------------
+--------- CONTINUE - FOR ---------------
+0
+1
+2
+3
+4
+Te saltaste este numero pa' -> 5
+6
+7
+8
+
+--------- CONTINUE - WHILE ---------------
+0
+1
+2
+3
+4
+Te saltaste este numero pa' -> 5
+6
+7
+8
+--------- CONTINUE - SWITCH ---------------
+Semantico - > Excepcion MAIN: Sentencia continue fuera de ciclo < [3,1]
+Semantico - > Excepcion MAIN: Sentencia return fuera de ciclo < [3,1]
+
+--------- CONTINUE - IF ---------------
+Semantico - > Excepcion MAIN: Sentencia continue fuera de ciclo < [3,1]
+Semantico - > Excepcion MAIN: Sentencia return fuera de ciclo < [3,1]
+
+--------------------------- PRUEBAS EN FUNCIONES ------------------------------
+FUNCION SUMA. Antes del error.
+Semantico - > Excepcion FUNCION (erroressimples) : Sentencia continue encontrada.< [92,1]
+Semantico - > Excepcion FUNCION (erroressimples) : Sentencia break encontrada.< [92,1]
+FUNCION SUMA. Salida
+
+FUNCION erroresSwitchFuncion. Antes del error.
+OpciÃ³n 8 del ejemplo switch: 8. Prueba continue en case.
+Semantico - > Excepcion FUNCION (erroresswitchfuncion) : Sentencia continue encontrada.< [100,1]
+FUNCION erroresSwitchFuncion. Salida.
+8
+
+FUNCION erroresSwitchFuncion. Antes del error.
+OpciÃ³n 16 del ejemplo switch: 16. Prueba break en case.
+FUNCION erroresSwitchFuncion. Salida.
+16
+
+FUNCION erroresSwitchFuncion. Antes del error.
+OpciÃ³n 24 del ejemplo switch: 24. Prueba de ambos juntos.
+Semantico - > Excepcion FUNCION (erroresswitchfuncion) : Sentencia continue encontrada.< [100,1]
+FUNCION erroresSwitchFuncion. Salida.
+24
+
+FUNCION erroresSwitchFuncion. Antes del error.
+OpciÃ³n 32 del ejemplo switch: 32. Prueba sin ambos. Ira al Default.
+No es ningun numero xd. Ponga un numero que este en el case >:v.
+Semantico - > Excepcion FUNCION (erroresswitchfuncion) : Sentencia continue encontrada.< [100,1]
+FUNCION erroresSwitchFuncion. Salida.
+32
+
+FUNCION erroresSwitchFuncion. Antes del error.
+No es ningun numero xd. Ponga un numero que este en el case >:v.
+Semantico - > Excepcion FUNCION (erroresswitchfuncion) : Sentencia continue encontrada.< [100,1]
+FUNCION erroresSwitchFuncion. Salida.
+1000
+
+
+
+FUNCION forWhileSwitch. Entrada
+Solamente deberia imprimir esto 1 vez con numero actual 5,
+El numero actual es: 5
+Estas en Default :c 10
+OYEEE ESTAS EN EL CASE 11
+Estas en Default :c 12
+Estas en Default :c 13
+Estas en Default :c 14
+PERO BUENO, ESTAS EN EL CASO 15
+QUE ESTA PASANDO, ESTAS EN CONTINUE, caso 16
+Estas en Default :c 17
+Estas en Default :c 18
+Estas en Default :c 19
+QUE ESTA PASANDO, ESTAS EN CONTINUE, caso 6
+Semantico - > Excepcion FUNCION (forwhileswitch) : Sentencia continue encontrada.< [180,1]
+
+
+
+FUNCION erroresForFuncion. Antes del error.
+For con asignacion y decremento i--.
+FUNCION erroresForFuncion. Salida.
+El numero ingresado es : 60
+
+FUNCION erroresForFuncion. Antes del error.
+For con asignacion y aumento i++
+40
+41
+42
+43
+44
+45
+46
+Te saltaste este numero pa': 47
+48
+49
+FUNCION erroresForFuncion. Salida.
+El numero ingresado es : 50
+
+FUNCION erroresForFuncion. Antes del error.
+For con declaracion y asignacion en aumento
+0-a
+1-a
+2-a
+4-a
+6-a
+7-a
+El valor de j es: 40
+0-a
+1-a
+2-a
+4-a
+6-a
+7-a
+El valor de j es: 39
+0-a
+1-a
+2-a
+4-a
+6-a
+7-a
+El valor de j es: 38
+0-a
+1-a
+2-a
+4-a
+6-a
+7-a
+El valor de j es: 37
+0-a
+1-a
+2-a
+4-a
+6-a
+7-a
+El valor de j es: 36
+FUNCION erroresForFuncion. Salida.
+El numero ingresado es : 35
+
+FUNCION erroresForFuncion. Antes del error.
+Entro al if - break
+Semantico - > Excepcion FUNCION (erroresforfuncion) : Sentencia break encontrada.< [125,1]
+Entro al if - continue
+Semantico - > Excepcion FUNCION (erroresforfuncion) : Sentencia continue encontrada.< [125,1]
+Entro al if - return
+20
+
+----------------------------- PRUEBAS EN MAIN ---------------------------------
+Semantico - > Excepcion MAIN: Sentencia continue fuera de ciclo < [3,1]
+Semantico - > Excepcion MAIN: Sentencia break fuera de ciclo < [3,1]
+Semantico - > Excepcion MAIN: Sentencia return fuera de ciclo < [3,1]
+*#

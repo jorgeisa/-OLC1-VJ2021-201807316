@@ -1,0 +1,9 @@
+main(){
+    print("Texto antes del read");
+    var i = read();
+    print(i);
+    print("Teexto despues del read");
+    var j = read();
+    print(j)
+
+}

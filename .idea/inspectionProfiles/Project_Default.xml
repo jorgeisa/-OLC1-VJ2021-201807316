@@ -1,0 +1,32 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N803" />
+          <option value="N802" />
+          <option value="N806" />
+          <option value="N801" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="fase2.team13.main.*" />
+          <option value="Table" />
+          <option value="team14.InterfazBD.DataBase" />
+          <option value="team15.storage.BaseDatos.*" />
+          <option value="fase2.team13.storage.avl.avl_mode.*" />
+          <option value="fase2.team13.Funciones.*" />
+          <option value="fase2.team13.GUI.*" />
+          <option value="list.*" />
+          <option value="bytes.digest" />
+          <option value="bytes.digest_size" />
+          <option value="Funciones" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
