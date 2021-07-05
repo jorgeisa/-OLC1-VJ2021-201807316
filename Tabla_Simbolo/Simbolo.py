@@ -7,6 +7,7 @@ class Simbolo:
         self.valor = valor
         self.bandera_arreglo = False
         self.dimension_arreglo = None
+        self.longitud_arreglo = 0
 
     def getID(self):
         return self.id
@@ -43,3 +44,9 @@ class Simbolo:
 
     def setDimensionArreglo(self, dimension_arreglo):
         self.dimension_arreglo = dimension_arreglo
+
+    def getLongitudArreglo(self):
+        return self.longitud_arreglo
+
+    def setLongitudArreglo(self, longitud):
+        self.longitud_arreglo = longitud
