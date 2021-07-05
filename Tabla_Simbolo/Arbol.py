@@ -12,6 +12,16 @@ class Arbol:
         self.__texto_interfaz = None
         self.dot = ""
         self.contador_dot = 0
+        self.listaTablas = []
+
+    def getListaTablas(self):
+        return self.listaTablas
+
+    def setListaTablas(self, listaTablas):
+        self.listaTablas = listaTablas
+
+    def addToListaTablas(self, tabla):
+        self.listaTablas.append(tabla)
 
     def getInstrucciones(self):
         return self.instrucciones

@@ -1,0 +1,14 @@
+main () {
+
+
+string [] nombre = new string[3]
+
+print(typeof(nombre))
+print(length(nombre))
+print(Round(nombre))
+print(tolower(nombre))
+print(toupper(nombre))
+print(truncate(nombre))
+
+
+}
