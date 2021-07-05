@@ -5,6 +5,7 @@ JPR Analyzer
 import os.path
 import sys
 
+from Tabla_Simbolo.TablaSimbolos import lista_variables
 from Abstract.NodoArbol import NodoArbol
 
 errors = []
@@ -874,7 +875,10 @@ def realizar_dot(astTree):
 
     dirname = os.path.dirname(__file__)
     direcc = os.path.join(dirname, 'ast.dot')
+
     file = open(direcc, "w+", encoding="utf-8")
+
+
     file.write(grafo)
     file.close()
     os.system('dot -T svg -o ast.svg ast.dot')
@@ -885,7 +889,7 @@ def grammar_analisis(entrada, txtWidget):
     #  ------------------ EXPORTACIONES ----------------
     from Tabla_Simbolo.Arbol import Arbol
     from Tabla_Simbolo.TablaSimbolos import TablaSimbolos
-
+    lista_variables.clear()
     '''
     El parse lo que nos devuelve es un arbol con nodos
     Hasta ahora solo hemos hecho el analisis sintactico
@@ -956,6 +960,7 @@ def grammar_analisis(entrada, txtWidget):
             astTree.updateConsola(err.toString())
 
     print(astTree.getConsola())
+    # print(lista_variables)
     return astTree
 
 # f = open("TestFiles/Prueba_Read1.jpr", "r")

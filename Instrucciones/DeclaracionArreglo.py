@@ -2,6 +2,7 @@ from Tabla_Simbolo.Tipo import TIPO
 from Expresiones.Primitivos import Primitivos
 from Tabla_Simbolo.Excepcion import Excepcion
 from Tabla_Simbolo.Simbolo import Simbolo
+from Tabla_Simbolo.TablaSimbolos import lista_variables
 from Abstract.NodoArbol import NodoArbol
 from Abstract.Instruccion import Instruccion
 import copy
@@ -44,6 +45,26 @@ class DeclaracionArreglo(Instruccion):
             # Verificando que se haya agregado a la tabla bien.
             result = table.setTabla(simbolo)
             if isinstance(result, Excepcion): return result
+
+            # llenar tabla simbolos
+            try:
+                identificador_d = str(self.identificador)
+                tipo_d = str(self.obtenerTipo(self.tipo))
+                tipo_d2 = str(simbolo.getBanderaArreglo())
+                entorno_d = "declaracion_arreglo" + str(self.fila) + "_" + str(self.columna)
+                valor_d = str("")
+                linea_d = str(self.fila)
+                columna_d = str(self.columna)
+
+                for valor in simbolo.getValor():
+                    if not isinstance(valor, list):
+                        valor_d += str(valor.interpretar(tree, table)) + ","
+
+                diccion = {'identificador': identificador_d, 'tipo1': tipo_d, 'tipo2': tipo_d2, 'entorno': entorno_d,
+                           'valor': valor_d, 'linea': linea_d, 'columna': columna_d}
+                lista_variables.append(diccion)
+            except:
+                print("error al agregar a la lista de tabla de simbolos")
         else:
             # Vamos a traer el arreglo al que se le asignara (identificador 2)
             simbolo_2 = table.getTabla(self.identificador_2.lower())
@@ -70,6 +91,26 @@ class DeclaracionArreglo(Instruccion):
             simbolo.setLongitudArreglo(longitud)
             result = table.setTabla(simbolo)
             if isinstance(result, Excepcion): return result
+
+            # llenar tabla simbolos
+            try:
+                identificador_d = str(self.identificador)
+                tipo_d = str(self.obtenerTipo(self.tipo))
+                tipo_d2 = str(simbolo.getBanderaArreglo())
+                entorno_d = "declaracion_arreglo" + str(self.fila) + "_" + str(self.columna)
+                valor_d = ""
+                linea_d = str(self.fila)
+                columna_d = str(self.columna)
+
+                for valor in simbolo_2.getValor():
+                    if not isinstance(valor, list):
+                        valor_d += str(valor.interpretar(tree, table)) + ","
+
+                diccion = {'identificador': identificador_d, 'tipo1': tipo_d, 'tipo2': tipo_d2, 'entorno': entorno_d,
+                           'valor': valor_d, 'linea': linea_d, 'columna': columna_d}
+                lista_variables.append(diccion)
+            except:
+                print("error al agregar a la lista de tabla de simbolos")
         return None
 
     def obtenerTipo(self, tipo):

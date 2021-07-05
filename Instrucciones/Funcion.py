@@ -3,6 +3,7 @@ from Instrucciones.Continue import Continue
 from Instrucciones.Return import Return
 from Tabla_Simbolo.Excepcion import Excepcion
 from Tabla_Simbolo.TablaSimbolos import TablaSimbolos
+from Tabla_Simbolo.TablaSimbolos import lista_variables
 from Tabla_Simbolo.Tipo import TIPO
 from Abstract.Instruccion import Instruccion
 from Instrucciones.Break import Break
@@ -45,7 +46,20 @@ class Funcion(Instruccion):
             if isinstance(valorInstruccion, Return):
                 self.tipo = valorInstruccion.tipo
                 return valorInstruccion.valorExpresion
-
+        # llenar tabla simbolos
+        try:
+            identificador_d = str(self.__idFuncion)
+            tipo_d = "Funcion"
+            tipo_d2 = "False"
+            entorno_d = "funcion_"+ identificador_d + str(self.fila) + "_" + str(self.columna)
+            valor_d = ""
+            linea_d = str(self.fila)
+            columna_d = str(self.columna)
+            diccion = {'identificador': identificador_d, 'tipo1': tipo_d, 'tipo2': tipo_d2, 'entorno': entorno_d,
+                       'valor': valor_d, 'linea': linea_d, 'columna': columna_d}
+            print("error al agregar a la lista de tabla de simbolos")
+        except:
+            print()
         return None
 
     def get_idFuncion(self):

@@ -15,6 +15,7 @@ from tkinter.messagebox import showinfo
 import grammar
 from Tabla_Simbolo.Arbol import Arbol
 from Tabla_Simbolo.TablaSimbolos import TablaSimbolos
+from Tabla_Simbolo.TablaSimbolos import lista_variables
 from grammar import grammar_analisis
 from grammar import realizar_dot
 
@@ -115,6 +116,8 @@ class MainScreen:
         self.report_item.add_command(label='Reporte Errores (Html)', command=self.reporte_errores)
         self.report_item.add_separator()
         self.report_item.add_command(label='Reporte Errores (Tablas)', command=self.llenar_TablaErrores)
+        self.report_item.add_separator()
+        self.report_item.add_command(label='Reporte Simbolos (Tablas)', command=self.llenar_TablaSimbolos)
         self.report_item.add_separator()
         self.report_item.add_command(label='Reporte Arbol', command=self.reporte_arbol)
         self.report_item.add_separator()
@@ -375,6 +378,7 @@ class MainScreen:
         for record in self.table_errorTable.get_children():
             self.table_errorTable.delete(record)
 
+
     def reporte_errores(self):
         print("----------------------Generando reporte de errores ----------------------")
         nameFile = filedialog.asksaveasfilename(title="Seleccione archivo", defaultextension='.html',
@@ -459,6 +463,23 @@ class MainScreen:
             webbrowser.open_new_tab(nameFile)
         else:
             print("Falta analizar una entrada!")
+
+    def llenar_TablaSimbolos(self):
+        self.limpiarTablaSimbolo()
+        print("Reporte tabla")
+        contadorVar = 0
+        for variable in lista_variables:
+            self.table_symbolTable.insert(parent='', index='end', iid=contadorVar, text="Parent",
+                                         values=(
+                                         f"{variable['identificador']}",
+                                         f"{variable['tipo1']}",
+                                         f"{variable['tipo2']}",
+                                         f"{variable['entorno']}",
+                                         f"{variable['valor']}",
+                                         f"{variable['linea']}",
+                                         f"{variable['columna']}")
+                                          )
+            contadorVar += 1
 
     def llenar_TablaErrores(self):
         self.limpiarTablaErrores()

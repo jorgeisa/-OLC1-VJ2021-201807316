@@ -1,6 +1,8 @@
 from Tabla_Simbolo.Excepcion import Excepcion
 from Tabla_Simbolo.Tipo import TIPO
 
+lista_variables = []
+
 
 class TablaSimbolos:
     def __init__(self, anterior=None):
