@@ -1,0 +1,20 @@
+print("hola \" mundo")
+print('a')
+print('\"')
+print('\t')
+print(2+2);
+#este es un comentario
+
+#*
+este es un 
+comentario 
+multiline
+*###
+
+print("hola");
+var hola = 2 + 2;
+var flag = true;
+ 
+
+print(hola);
+print(flag);

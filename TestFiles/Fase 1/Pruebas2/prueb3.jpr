@@ -1,0 +1,4 @@
+var hola = 12;
+var adios = 53.6;
+print(hola);
+print(adios + hola);

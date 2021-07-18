@@ -1,0 +1,19 @@
+####----Tabla de Multiplicar con For----####
+
+for (var i = 1; i <= 10; i++){
+
+	print(i + " x " + "5" + " = " + (i * 5));
+
+}
+
+####----Tabla de Multiplicar con While----####
+
+var count = 1
+while(count <= 10){
+
+	print(count + " x " + "5" + " = " + (count * 5));
+
+	count++
+}
+ 
+ 

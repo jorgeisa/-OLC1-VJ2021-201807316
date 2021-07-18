@@ -1,0 +1,566 @@
+main(){
+  var d = "░░";
+  var m = "▒▒";
+  var l = "▓▓";
+  var s = "  "
+
+  var dibujo = ""
+
+  var i = 0;
+  while(i < 12){
+    var linea = "";
+    if(i == 0){
+      for(var a = 0; a < 5; a++){
+        if((a == 0) || (a == 4)){
+          for(var b = 0; b < 6; b++){
+            linea = linea + s;
+          }
+        }
+        if((a == 1) || (a == 3)){
+          for(var b = 0; b < 1; b++){
+            linea = linea + d;
+          }
+        }
+        if(a == 2){
+          for(var b = 0; b < 8; b++){
+            linea = linea + s;
+          }
+        }
+      }
+    }
+    if(i == 1){
+      for(var a = 0; a < 9; a++){
+        if((a == 0)||(a == 8)){
+          for(var b = 0; b < 5; b++){
+            linea = linea + s;
+          }
+        }
+        if((a == 1)||(a == 3)||(a == 5)||(a == 7)){
+          for(var b = 1; b > 0; b--){
+            linea = linea + d;
+          }
+        }
+        if((a == 2)||(a == 6)){
+          for(var b = 1; b > 0; b--){
+            linea = linea + m;
+          }
+        }
+        if(a == 4){
+          for(var b = 6; b > 0; b--){
+            linea = linea + s;
+          }
+        }
+      }
+    }
+    if(i == 2){
+      for(var a = 0; a < 7; a++){
+        if((a == 0)||(a == 6)){
+          for(var b = 5; b > 0; b--){
+            linea = linea + s;
+          }
+        }
+        if((a == 1)||(a == 5)){
+          for(var b = 1; b > 0; b--){
+            linea = linea + d;
+          }
+        }
+        if((a == 2)||(a == 4)){
+          for(var b = 2; b > 0; b--){
+            linea = linea + m;
+          }
+        }
+        if(a == 3){
+          for(var b = 6; b > 0; b--){
+            linea = linea + d;
+          }
+        }
+      }
+    }
+    if(i == 3){
+      for(var a = 0; a < 5; a++){
+        if((a == 0) || (a == 4)){
+          for(var b = 4; b > 0; b--){
+            linea = linea + s;
+          }
+        }
+        if((a == 1) || (a == 3)){
+          for(var b = 1; b > 0; b--){
+            linea = linea + d;
+          }
+        }
+        if(a == 2){
+          for(var b = 12; b > 0; b--){
+            linea = linea + m;
+          }
+        }
+      }
+    }
+    if(i == 4){
+      for(var a = 0; a < 11; a++){
+        if((a == 0)||(a == 10)){
+          for(var b = 1; b > 0; b--){
+            linea = linea + s;
+          }
+        }
+        if((a == 1)||(a == 3)||(a == 7)||(a == 9)){
+          for(var b = 1; b > 0; b--){
+            linea = linea + d;
+          }
+        }
+        if((a == 2)||(a == 8)){
+          for(var b = 2; b > 0; b--){
+            linea = linea + s;
+          }
+        }
+        if((a == 4)||(a == 6)){
+          for(var b = 3; b > 0; b--){
+            linea = linea + l;
+          }
+        }
+        if(a == 5){
+          for(var b = 6; b > 0; b--){
+            linea = linea + m;
+          }
+        }
+      }
+    }
+    if(i == 5){
+      var a = 0;
+      while(a < 15){
+        if((a == 0)||(a == 14)){
+          for(var b = 2; b > 0; b--){
+            linea = linea + s;
+          }
+        }
+        if((a == 1)||(a == 7)||(a == 13)){
+          for(var b = 2; b > 0; b--){
+            linea = linea + d;
+          }
+        }
+        if((a == 2)||(a == 12)){
+          for(var b = 1; b > 0; b--){
+            linea = linea + m;
+          }
+        }
+        if((a == 3)||(a == 5)||(a == 9)||(a == 11)){
+          for(var b = 1; b > 0; b--){
+            linea = linea + l;
+          }
+        }
+        if((a == 4)||(a == 10)){
+          for(var b = 1; b > 0; b--){
+            linea = linea + d;
+          }
+        }
+        if((a == 6)||(a == 8)){
+          for(var b = 2; b > 0; b--){
+            linea = linea + m;
+          }
+        }
+        a++;
+      }
+    }
+    if(i == 6){
+      for(var a = 0; a < 9; a++){
+        if((a == 0)||(a == 8)){
+          for(var b = 3; b > 0; b--){
+            linea = linea + s;
+          }
+        }
+        if((a == 1)||(a == 7)){
+          for(var b = 1; b > 0; b--){
+            linea = linea + d;
+          }
+        }
+        if((a == 2)||(a == 6)){
+          for(var b = 1; b > 0; b--){
+            linea = linea + m;
+          }
+        }
+        if((a == 3)||(a == 5)){
+          for(var b = 3; b > 0; b--){
+            linea = linea + l;
+          }
+        }
+        if(a == 4){
+          for(var b = 6; b > 0; b--){
+            linea = linea + m;
+          }
+        }
+      }
+    }
+    if(i == 7){
+      for(var a = 0; a < 3; a++){
+        if((a == 0)||(a == 2)){
+          for(var b = 3; b > 0; b--){
+            linea = linea + d;
+          }
+        }
+        if(a == 1){
+          for(var b = 16; b > 0; b--){
+            linea = linea + m;
+          }
+        }
+      }
+    }
+    if(i == 8){
+      for(var a = 0; a < 7; a++){
+        if((a == 0)||(a == 6)){
+          for(var b = 2; b > 0; b--){
+            linea = linea + s;
+          }
+        }
+        if((a == 1)||(a == 5)){
+          for(var b = 1; b > 0; b--){
+            linea = linea + d;
+          }
+        }
+        if((a == 2)||(a == 4)){
+          for(var b = 6; b > 0; b--){
+            linea = linea + m;
+          }
+        }
+        if(a == 3){
+          for(var b = 4; b > 0; b--){
+            linea = linea + l;
+          }
+        }
+      }
+    }
+    if(i == 9){
+      for(var a = 0; a < 7; a++){
+        if((a == 0)||(a == 6)){
+          for(var b = 2; b > 0; b--){
+            linea = linea + s;
+          }
+        }
+        if((a == 1)||(a == 5)){
+          for(var b = 1; b > 0; b--){
+            linea = linea + d;
+          }
+        }
+        if((a == 2)||(a == 4)){
+          for(var b = 4; b > 0; b--){
+            linea = linea + m;
+          }
+        }
+        if(a == 3){
+          var b = 8;
+          while(b > 0){
+            linea = linea + l;
+            b--;
+          }
+        }
+      }
+    }
+    if(i == 10){
+      var a = 0;
+      while(a < 7){
+        if((a == 0)||(a == 6)){
+          for(var b = 1; b > 0; b--){
+            linea = linea + s;
+          }
+        }
+        if((a == 1)||(a == 5)){
+          var b = 1;
+          while(b > 0){
+            linea = linea + d;
+            b--;
+          }
+        }
+        if((a == 2)||(a == 4)){
+          for(var b = 4; b > 0; b--){
+            linea = linea + m;
+          }
+        }
+        if(a == 3){
+          for(var b = 10; b > 0; b--){
+            linea = linea + l;
+          }
+        }
+        a++;
+      }
+    }
+    if(i == 11){
+      for(var a = 0; a < 7; a++){
+        if((a == 0)||(a == 6)){
+          for(var b = 1; b > 0; b--){
+            linea = linea + s;
+          }
+        }
+        if((a == 1)||(a == 5)){
+          var b = 1;
+          while(b > 0){
+            linea = linea + d;
+            b--;
+          }
+        }
+        if((a == 2)||(a == 4)){
+          for(var b = 3; b > 0; b--){
+            linea = linea + m;
+          }
+        }
+        if(a == 3){
+          var b = 12;
+          while(b > 0){
+            linea = linea + l;
+            b--;
+          }
+        }
+      }
+    }
+    dibujo = dibujo + linea + '\n';
+    i++;
+  }
+
+  for(var i = 12; i > 0; i--){
+    var linea = ""
+    if(i == 12){
+      for(var a = 0; a < 5; a++){
+        if((a == 0)||(a == 4)){
+          for(var b = 1; b > 0; b--){
+            linea = linea + d;
+          }
+        }
+        if((a == 1)||(a == 3)){
+          for(var b = 3; b > 0; b--){
+            linea = linea + m;
+          }
+        }
+        if(a == 2){
+          for(var b = 14; b > 0; b--){
+            linea = linea + l;
+          }
+        }
+      }
+    }
+    if(i == 11){
+      for(var a = 0; a < 9; a++){
+        if((a == 0)||(a == 2)||(a == 6)||(a == 8)){
+          for(var b = 1; b > 0; b--){
+            linea = linea + d;
+          }
+        }
+        if((a == 1)||(a == 3)||(a == 5)||(a == 7)){
+          for(var b = 1; b > 0; b--){
+            linea = linea + m;
+          }
+        }
+        if(a == 4){
+          for(var b = 14; b > 0; b--){
+            linea = linea + l;
+          }
+        }
+      }
+    }
+    if(i == 10){
+      for(var a = 0; a < 13; a++){
+        if((a == 0)||(a == 2)||(a == 10)||(a == 12)){
+          for(var b = 1; b > 0; b--){
+            linea = linea + d;
+          }
+        }
+        if((a == 1)||(a == 4)||(a == 8)||(a == 11)){
+          for(var b = 1; b > 0; b--){
+            linea = linea + m;
+          }
+        }
+        if((a == 3)||(a == 5)||(a == 7)||(a == 9)){
+          for(var b = 3; b > 0; b--){
+            linea = linea + l;
+          }
+        }
+        if(a == 6){
+          for(var b = 2; b > 0; b--){
+            linea = linea + m;
+          }
+        }
+      }
+    }
+    if(i == 9){
+      for(var a = 0; a < 17; a ++){
+        if((a == 0)||(a == 16)){
+          for(var b = 2; b > 0; b--){
+            linea = linea + d;
+          }
+        }
+        if((a == 1)||(a == 3)||(a == 5)||(a == 7)||(a == 9)||(a == 11)||(a == 13)||(a == 15)){
+          for(var b = 1; b > 0; b--){
+            linea = linea + m;
+          }
+        }
+        if((a == 2)||(a == 8)||(a == 14)){
+          for(var b = 2; b > 0; b--){
+            linea = linea + l;
+          }
+        }
+        if((a == 4)||(a == 6)||(a == 10)||(a == 12)){
+          for(var b = 1; b > 0; b--){
+            linea = linea + l;
+          }
+        }
+      }
+    }
+    if(i == 8){
+      for(var a = 0; a < 5; a++){
+        if((a == 0)||(a == 4)){
+          for(var b = 2; b > 0; b--){
+            linea = linea + d;
+          }
+        }
+        if((a == 1)||(a == 3)){
+          for(var b = 1; b > 0; b--){
+            linea = linea + m;
+          }
+        }
+        if(a == 2){
+          for(var b = 16; b > 0; b--){
+            linea = linea + l;
+          }
+        }
+      }
+    }
+    if(i == 7){
+      for(var a = 0; a < 5; a++){
+        if((a == 0)||(a == 4)){
+          for(var b = 1; b > 0; b--){
+            linea = linea + s;
+          }
+        }
+        if((a == 1)||(a == 3)){
+          for(var b = 2; b > 0; b--){
+            linea = linea + d;
+          }
+        }
+        if(a == 2){
+          for(var b = 16; b > 0; b--){
+            linea = linea + l;
+          }
+        }
+      }
+    }
+    if(i == 6){
+      for(var a = 0; a < 5; a++){
+        if((a == 0)||(a == 4)){
+          for(var b = 2; b > 0; b--){
+            linea = linea + s;
+          }
+        }
+        if((a == 1)||(a == 3)){
+          for(var b = 1; b > 0; b--){
+            linea = linea + d;
+          }
+        }
+        if(a == 2){
+          for(var b = 16; b > 0; b--){
+            linea = linea + l;
+          }
+        }
+      }
+    }
+    if(i == 5){
+      for(var a = 0; a < 5; a++){
+        if((a == 0)||(a == 4)){
+          for(var b = 3; b > 0; b--){
+            linea = linea + s;
+          }
+        }
+        if((a == 1)||(a == 3)){
+          for(var b = 1; b > 0; b--){
+            linea = linea + d;
+          }
+        }
+        if(a == 2){
+          for(var b = 14; b > 0; b--){
+            linea = linea + l;
+          }
+        }
+      }
+    }
+    if(i == 4){
+      for(var a = 0; a < 5; a++){
+        if((a == 0)||(a == 4)){
+          for(var b = 4; b > 0; b--){
+            linea = linea + s;
+          }
+        }
+        if((a == 1)||(a == 3)){
+          for(var b = 1; b > 0; b--){
+            linea = linea + d;
+          }
+        }
+        if(a == 2){
+          for(var b = 12; b > 0; b--){
+            linea = linea + l;
+          }
+        }
+      }
+    }
+    if(i == 3){
+      for(var a = 0; a < 7; a++){
+        if((a == 0)||(a == 6)){
+          for(var b = 4; b > 0; b--){
+            linea = linea + s;
+          }
+        }
+        if((a == 1)||(a == 5)){
+          for(var b = 1; b > 0; b--){
+            linea = linea + d;
+          }
+        }
+        if((a == 2)||(a == 4)){
+          for(var b = 4; b > 0; b--){
+            linea = linea + m;
+          }
+        }
+        if(a == 3){
+          for(var b = 4; b > 0; b--){
+            linea = linea + l;
+          }
+        }
+      }
+    }
+    if(i == 2){
+      for(var a = 0; a < 7; a++){
+        if((a == 0)||(a == 6)){
+          for(var b = 5; b > 0; b--){
+            linea = linea + s;
+          }
+        }
+        if((a == 1)||(a == 5)){
+          for(var b = 1; b > 0; b--){
+            linea = linea + d;
+          }
+        }
+        if((a == 2)||(a == 4)){
+          for(var b = 4; b > 0; b--){
+            linea = linea + m;
+          }
+        }
+        if(a == 3){
+          for(var b = 2; b > 0; b--){
+            linea = linea + d;
+          }
+        }
+      }
+    }
+    if(i == 1){
+      for(var a = 0; a < 3; a++){
+        if((a == 0)||(a == 2)){
+          for(var b = 6; b > 0; b--){
+            linea = linea + s;
+          }
+        }
+        if(a == 1){
+          for(var b = 10; b > 0; b--){
+            linea = linea + d;
+          }
+        }
+      }
+    }
+    dibujo = dibujo + linea + '\n';
+  }
+  print(dibujo);
+  print("Esta es una prueba para las tildes áéíóú - útf-8")
+}
+ 

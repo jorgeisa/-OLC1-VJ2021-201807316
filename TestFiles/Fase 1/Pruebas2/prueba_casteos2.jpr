@@ -1,0 +1,26 @@
+main(){
+
+	var num = (int) 12.5;
+	var character = 'a';
+
+	print("Hola");
+
+	print(num);
+	print((int) character);
+
+	var decimal = (double) character;
+
+	print(decimal);
+
+	decimal = (int) 12.334;
+
+	print(decimal);
+
+}
+ 
+
+ 
+
+
+
+

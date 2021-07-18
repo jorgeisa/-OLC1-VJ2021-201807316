@@ -1,0 +1,25 @@
+var count = 0;
+
+while(count < 11){
+
+	print(count);
+	
+	if (count == 5){
+		print("El 5 es el mejor");
+	}
+	
+	count++
+
+	var count = 0;
+
+	while(count < 5){
+		print("\t" + count)
+
+		count++
+	}
+        
+}
+ 
+ 
+ 
+ 

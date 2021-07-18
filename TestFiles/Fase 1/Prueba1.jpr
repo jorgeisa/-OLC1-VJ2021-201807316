@@ -1,0 +1,35 @@
+
+var F = "jsjsjss"
+main(){
+    var edad = 18;
+switch( edad ) {
+ Case 10:
+ Print("Tengo 10 anios.");
+ # mas sentencias
+ Break;
+ Case 18:
+ Print("Tengo 18 anios.");
+ # mas sentencias
+ Case "25":
+ Print("Tengo 25 anios en String.");
+ # mas sentencias
+ Break;
+ Case 18:
+ Print("Tengo 18 anios. x2");
+ Case 18:
+ Print("Tengo 18 anios. x3");
+ Default:
+ Print("No se que edad tengo. :(");
+ # mas sentencias
+ Break;
+}
+#* Salida esperada
+Tengo 18 anios.
+Tengo 18 anios. x2
+Tengo 18 anios. x3
+No se que edad tengo. :(
+*#
+}
+
+
+

@@ -1,0 +1,7 @@
+main(){
+	if("TrUe" == true){
+		print("Hola");
+	}else{
+		print("Hola2");
+	}
+}

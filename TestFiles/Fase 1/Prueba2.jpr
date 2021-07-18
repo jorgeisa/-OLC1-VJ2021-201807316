@@ -1,0 +1,253 @@
+
+print("-------------- PROBANDO ESPECIALES -----------")
+print(5 + "Hola\" \\ \n h- \r -h \' ");
+#* Salida:
+5Hola" \
+ -h '
+*#
+print("--------------- CARACTERES -------------------")
+print('c')  # Salida: c
+print('\n') # Salida: salto linea
+print('c')  # Salida: c
+print('\r') # Salida: retorno carro
+print('c')  # Salida: c
+print('\\') # Salida: \
+print('c')  # Salida: c
+print('\t') # Salida: tabulacion
+print('c')  # Salida: c
+print('\'') # Salida: '
+
+#* Salida:
+c
+
+
+c
+
+c
+\
+c
+
+c
+'
+603
+*#
+
+print("------------- SUMA SIMPLE ----------------")
+print("--------------- Int ----------------------")
+print(5 + 3+234+324+34+3);  # Salida: 603
+print(5 + 50.5)
+print(5 + true + false)
+print(5 + "Hola")
+
+print("-------------- Double --------------------")
+print(50.5 + 5)
+print(50.5 + 50.5);
+print(50.5 + true + false);
+print(50.5 + "Hola2")
+
+print("------------- boolean --------------------")
+print(true + 1);
+print(false + 1);
+print(true + 10.156);
+print(false + 10.156);
+print(true + true);
+print(true + "Holas");
+
+print("------------- Caracter --------------------");
+print('c' + "cadenaCaracter")
+print('c' + 'c');
+
+print("------------- String --------------------");
+print("Hola " + 12)
+print("Hola " + 12.5);
+print("Hola " + false);
+print("Hola " + 'c')
+print("Hola" + "Mundo")
+
+print("------------- RESTA SIMPLE --------------------")
+print("------------- Int -----------------------------")
+print(100 - 80 - 10)
+print(15 - 15.5 - 10.2)
+print(10 - true - false)
+print("------------- Double --------------------------")
+print(100.5 - 80 - 10)
+print(100.5 - 80.2 - 10.5)
+print(100.5 - true - false)
+print("------------- Boolean -------------------------")
+print(true - 10);
+print(true - 10.5)
+print("------------- MULTIPLICACION SIMPLE -----------")
+print(5 * 2)
+print("------------- OP. RELACIONAL SIMPLE == -----------")
+print("------------ Int -----------")
+print(5 == 5)
+print(5 == 5.0)
+print(5 == "5")
+print("------------ Double -----------")
+print(5.58 == 5)
+print(5.58 == 587)
+print(5.58 == "5.58")
+print("------------ Boolean -----------")
+print(true == true)
+print(true == false)
+print(false == true)
+print(false == "Cadena")
+print("------------ Char -----------")
+print('c' == 't')
+print('g' == 'g')
+print("------------ String -----------")
+print("CadenaR" == 789)
+print("CadenaR" == 789.56)
+print("CadenaR" == false)
+print("false" == false)
+print("CadenaR" == "CadenaR")
+print("------------- OP. RELACIONAL SIMPLE =! -----------")
+print("------------ Int -----------")
+print(5 =! 5)
+print(5 =! 5.58)
+print(5 =! "789")
+print("------------ Double -----------")
+print(5.58 =! 5)
+print(5.58 =! 587)
+print(5.58 =! "5.58")
+print("------------ Boolean -----------")
+print(true =! true)
+print(true =! false)
+print(false =! true)
+print(false =! "false")
+print("------------ Char -----------")
+print('c' =! 't')
+print('g' =! 'g')
+print("------------ String -----------")
+print("CadenaR" =! 789)
+print("CadenaR" =! 789.56)
+print("CadenaR" =! false)
+print("false" =! false)
+print("CadenaR" =! "CadenaR")
+print("------------- OP. RELACIONAL SIMPLE < -----------")
+print("------------ Int -----------")
+print(5 < 5)
+print(5 < 5.58)
+print("------------ Double -----------")
+print(5.58 < 5)
+print(5.58 < 587)
+print("------------ Boolean -----------")
+print(true < true)
+print(true < false)
+print(false < true)
+print("------------- OP. RELACIONAL SIMPLE > -----------")
+print("------------ Int -----------")
+print(5 > 5)
+print(5 > 5.58)
+print("------------ Double -----------")
+print(5.58 > 5)
+print(5.58 > 587)
+print("------------ Boolean -----------")
+print(true > true)
+print(true > false)
+print(false > true)
+print("------------- OP. RELACIONAL SIMPLE <= -----------")
+print("------------ Int -----------")
+print(5 <= 5)
+print(5 <= 5.58)
+print("------------ Double -----------")
+print(5.58 <= 5)
+print(5.58 <= 587)
+print("------------ Boolean -----------")
+print(true <= true)
+print(true <= false)
+print(false <= true)
+print("------------- OP. RELACIONAL SIMPLE > -----------")
+print("------------ Int -----------")
+print(5 >= 5)
+print(5 >= 5.58)
+print("------------ Double -----------")
+print(5.58 >= 5)
+print(5.58 >= 587)
+print("------------ Boolean -----------")
+print(true >= true)
+print(true >= false)
+print(false >= true)
+print("------------- OP. LOGICO SIMPLE || -----------")
+print(true ||  false)
+print(false ||  true)
+print(false ||  false)
+print(true ||  true)
+print("------------- OP. LOGICO SIMPLE && -----------")
+print(true &&  false)
+print(false &&  true)
+print(false &&  false)
+print(true &&  true)
+print("------------- OP. LOGICO SIMPLE || -----------")
+print(!((false == false) =! "true"));
+print(!true)
+
+print("")
+print("----------- DECLARACION --------------")
+
+
+
+print("----------------------------------------")
+var i=9
+i++
+print(i)
+i= i++ + i++
+print(i)
+print("----------------------------------------")
+
+var edad1 = 1
+var edad2 = 5
+var edad3 = 5
+var edad4 = 10
+if(edad1 < edad2){
+    print("La edad " + edad1 + " es menor que la edad " + edad2);
+}else if(edad3 > edad4){
+    print("La edad " + edad3 + " es mayor que la edad " + edad4)
+}else if(edad1 == edad4){
+    print("La edad " + edad1 + " es igual a la edad " + edad4);
+}else{
+    print("Edad " + edad1 + " es mayor o igual que " + edad2)
+    print("Edad " + edad3 + " es menor o igual que " + edad4);
+    print("Edad " + edad1 + " no es igual que " + edad4)
+}
+
+
+
+
+
+var a = 154654
+while(i =! 0){
+
+    print("Variable de While " + a)
+    print("iteracion " + i);
+    i--;
+}
+
+
+
+var prueba = 10
+switch(true){
+    case "cadena":
+        print("Hola")
+        break;
+    case true:
+        print("addios")
+        break;
+    case "cadena":
+        print("Hola")
+        break;
+    case true:
+        print("addios")
+        break
+    case "cadena":
+        print("Hola")
+        break;
+    case true:
+        print("addios")
+        break;
+    default:
+        print("default")
+        break;
+
+        print("")
+}

@@ -1,0 +1,13 @@
+for (var i = 0; i<5; i++){
+	
+	print("Iteracion numero: " + i);
+
+	var count = 0;
+
+	while(count < 3){
+		print("numero: " + count);
+		count++
+	}
+
+}
+

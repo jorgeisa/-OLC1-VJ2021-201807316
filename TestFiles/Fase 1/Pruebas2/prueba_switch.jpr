@@ -1,0 +1,18 @@
+var num = 2;
+
+switch(num){
+
+	case 1:
+			print("hola");
+			break;
+	case 2:
+			print("hola2");
+			#break;
+	case 3:
+			print("El numero es 3")
+			#break;
+	default:
+			print("no era nada de esto :'(");
+}
+ 
+ 

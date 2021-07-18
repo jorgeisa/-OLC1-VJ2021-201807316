@@ -1,0 +1,33 @@
+main () {
+
+
+	var hola = 3;
+	switch(hola){
+	
+		case 1:
+				print("Es 1 el numero: " + hola);
+				break;
+		case 2:
+				print("Es 2 el numero: " + hola);
+				break;
+		case 3:
+				print("Es 3 el numero: " + hola);
+				break;
+
+		default:
+				
+				if (hola > 5){
+					print("El número: " + hola + "es mayor a 5");
+				}
+
+				switch(hola){
+				
+					case 5:
+							print("Es 5");
+							break;
+				
+				}
+	
+	}
+
+}

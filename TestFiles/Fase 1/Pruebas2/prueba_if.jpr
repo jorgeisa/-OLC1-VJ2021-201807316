@@ -1,0 +1,19 @@
+if (6 < 5){
+
+	print("hola");
+
+	if (1 < 4){
+		print("1 es mayor a 4");	
+	}
+
+} else if (2 < 4){
+	print("2 es menor a 4");
+} else {
+
+	print("Hasta luego");
+}
+ 
+ 
+ 
+ 
+ 

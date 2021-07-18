@@ -1,0 +1,22 @@
+var num1 = 0;
+
+print(num1);
+
+main () {
+	
+	print("hola");
+	print(num1);
+	print(num2);
+
+}
+
+main () {
+	
+	print("Adios");
+
+}
+
+var num2 = 90;
+
+print("Mañana");
+ 

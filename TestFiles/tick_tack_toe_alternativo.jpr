@@ -1,0 +1,375 @@
+string[][] TABLERO = new string[7][13]
+TABLERO[0][0]  = "╔"
+TABLERO[0][1]  = "═"
+TABLERO[0][2]  = "═"
+TABLERO[0][3]  = "═"
+TABLERO[0][4]  = "╤"
+TABLERO[0][5]  = "═"
+TABLERO[0][6]  = "═"
+TABLERO[0][7]  = "═"
+TABLERO[0][8]  = "╤"
+TABLERO[0][9]  = "═"
+TABLERO[0][10] = "═"
+TABLERO[0][11] = "═"
+TABLERO[0][12] = "╗"
+
+TABLERO[1][0]  = "║"
+TABLERO[1][1]  = " "
+TABLERO[1][2]  = " "
+TABLERO[1][3]  = " "
+TABLERO[1][4]  = "│"
+TABLERO[1][5]  = " "
+TABLERO[1][6]  = " "
+TABLERO[1][7]  = " "
+TABLERO[1][8]  = "│"
+TABLERO[1][9]  = " "
+TABLERO[1][10] = " "
+TABLERO[1][11] = " "
+TABLERO[1][12] = "║"
+
+TABLERO[2][0]  = "╟"
+TABLERO[2][1]  = "─"
+TABLERO[2][2]  = "─"
+TABLERO[2][3]  = "─"
+TABLERO[2][4]  = "┼"
+TABLERO[2][5]  = "─"
+TABLERO[2][6]  = "─"
+TABLERO[2][7]  = "─"
+TABLERO[2][8]  = "┼"
+TABLERO[2][9]  = "─"
+TABLERO[2][10] = "─"
+TABLERO[2][11] = "─"
+TABLERO[2][12] = "╢"
+
+TABLERO[3][0]  = "║"
+TABLERO[3][1]  = " "
+TABLERO[3][2]  = " "
+TABLERO[3][3]  = " "
+TABLERO[3][4]  = "│"
+TABLERO[3][5]  = " "
+TABLERO[3][6]  = " "
+TABLERO[3][7]  = " "
+TABLERO[3][8]  = "│"
+TABLERO[3][9]  = " "
+TABLERO[3][10] = " "
+TABLERO[3][11] = " "
+TABLERO[3][12] = "║"
+
+TABLERO[4][0]  = "╟"
+TABLERO[4][1]  = "─"
+TABLERO[4][2]  = "─"
+TABLERO[4][3]  = "─"
+TABLERO[4][4]  = "┼"
+TABLERO[4][5]  = "─"
+TABLERO[4][6]  = "─"
+TABLERO[4][7]  = "─"
+TABLERO[4][8]  = "┼"
+TABLERO[4][9]  = "─"
+TABLERO[4][10] = "─"
+TABLERO[4][11] = "─"
+TABLERO[4][12] = "╢"
+
+TABLERO[5][0]  = "║"
+TABLERO[5][1]  = " "
+TABLERO[5][2]  = " "
+TABLERO[5][3]  = " "
+TABLERO[5][4]  = "│"
+TABLERO[5][5]  = " "
+TABLERO[5][6]  = " "
+TABLERO[5][7]  = " "
+TABLERO[5][8]  = "│"
+TABLERO[5][9]  = " "
+TABLERO[5][10] = " "
+TABLERO[5][11] = " "
+TABLERO[5][12] = "║"
+
+TABLERO[6][0]  = "╚"
+TABLERO[6][1]  = "═"
+TABLERO[6][2]  = "═"
+TABLERO[6][3]  = "═"
+TABLERO[6][4]  = "╧"
+TABLERO[6][5]  = "═"
+TABLERO[6][6]  = "═"
+TABLERO[6][7]  = "═"
+TABLERO[6][8]  = "╧"
+TABLERO[6][9]  = "═"
+TABLERO[6][10] = "═"
+TABLERO[6][11] = "═"
+TABLERO[6][12] = "╝"
+
+int[][][] LINEAS = new int[8][3][2]
+LINEAS[0][0][0] = 2
+LINEAS[0][0][1] = 1
+LINEAS[0][1][0] = 6
+LINEAS[0][1][1] = 1
+LINEAS[0][2][0] = 10
+LINEAS[0][2][1] = 1
+
+LINEAS[1][0][0] = 2
+LINEAS[1][0][1] = 3
+LINEAS[1][1][0] = 6
+LINEAS[1][1][1] = 3
+LINEAS[1][2][0] = 10
+LINEAS[1][2][1] = 3
+
+LINEAS[2][0][0] = 2
+LINEAS[2][0][1] = 5
+LINEAS[2][1][0] = 6
+LINEAS[2][1][1] = 5
+LINEAS[2][2][0] = 10
+LINEAS[2][2][1] = 5
+
+LINEAS[3][0][0] = 2
+LINEAS[3][0][1] = 1
+LINEAS[3][1][0] = 2
+LINEAS[3][1][1] = 3
+LINEAS[3][2][0] = 2
+LINEAS[3][2][1] = 5
+
+LINEAS[4][0][0] = 6
+LINEAS[4][0][1] = 1
+LINEAS[4][1][0] = 6
+LINEAS[4][1][1] = 3
+LINEAS[4][2][0] = 6
+LINEAS[4][2][1] = 5
+
+LINEAS[5][0][0] = 10
+LINEAS[5][0][1] = 1
+LINEAS[5][1][0] = 10
+LINEAS[5][1][1] = 3
+LINEAS[5][2][0] = 10
+LINEAS[5][2][1] = 5
+
+LINEAS[6][0][0] = 2
+LINEAS[6][0][1] = 1
+LINEAS[6][1][0] = 6
+LINEAS[6][1][1] = 3
+LINEAS[6][2][0] = 10
+LINEAS[6][2][1] = 5
+
+LINEAS[7][0][0] = 10
+LINEAS[7][0][1] = 1
+LINEAS[7][1][0] = 6
+LINEAS[7][1][1] = 3
+LINEAS[7][2][0] = 2
+LINEAS[7][2][1] = 5
+
+
+
+var NOMBRE_J1 = "Jugador 1"
+var NOMBRE_J2 = "Jugador 2"
+var MARCA_J1  = "X"
+var MARCA_J2  = "O"
+var TURNO = True
+
+func imprimir_tablero(){
+    var ANCHO = 13
+    var ALTO  = 7
+
+    for(var y = 0; y < ALTO; y++){
+        var LINEA = ""
+        for(var x = 0; x < ANCHO; x++){
+            LINEA = LINEA + TABLERO[y][x]
+        }
+        print(LINEA)
+    }
+}
+
+func coordenada_x(int casilla_x){
+    switch(casilla_x){
+        case 1:
+            return 2
+        case 2:
+            return 6
+        case 3:
+            return 10
+    }
+}
+
+func coordenada_y(int casilla_y){
+    switch(casilla_y){
+        case 1:
+            return 1
+        case 2:
+            return 3
+        case 3:
+            return 5
+    }
+}
+
+func marcar(string[] instruccion){
+    var marca = instruccion[0]
+    var coord_x = coordenada_x((int) instruccion[1])
+    var coord_y = coordenada_y((int) instruccion[2])
+    TABLERO[coord_y][coord_x] = marca
+}
+
+func obtener_marca(int x, int y){
+    var m = TABLERO[y][x]
+    return m
+}
+
+func ganador(string marca){
+    var resultado = False
+    for(var ln = 0; ln < 8; ln++){
+        for(var coord = 0; coord < 3; coord++){
+            var x = LINEAS[ln][coord][0]
+            var y = LINEAS[ln][coord][1]
+            if (marca == obtener_marca(x, y)){
+                resultado = True
+            } else {
+                resultado = False
+                break
+            }
+        }
+        if(resultado){
+            break
+        }
+    }
+    return resultado
+}
+
+func sin_espacio(){
+    for(var ln = 0; ln < 8; ln++){
+        for(var coord = 0; coord < 3; coord++){
+            var x = LINEAS[ln][coord][0]
+            var y = LINEAS[ln][coord][1]
+            var m = TABLERO[y][x]
+            if(m == " "){
+                return False
+            }
+        }
+    }
+    return True
+}
+
+func limpiar_tablero(){
+    for(var ln = 0; ln < 8; ln++){
+        for(var coord = 0; coord < 3; coord++){
+            var x = LINEAS[ln][coord][0]
+            var y = LINEAS[ln][coord][1]
+            TABLERO[y][x] = " "
+        }
+    }
+}
+
+func cambiar_turno(){
+    if(TURNO){
+        TURNO = False
+    } else {
+        TURNO = True
+    }
+}
+
+func movimiento(string nombre, string marca){
+    var x
+    var y
+    print("Por favor ingresa una coordenada x, " + nombre)
+    x = (int) read()
+    if(x < 1 || x > 3){
+        print("Debes ingresar 1, 2 o 3")
+        continue
+    }
+    print("Por favor ingresa una coordenada y, " + nombre)
+    y = (int) read()
+    if(y < 1 || y > 3){
+        print("Debes ingresar 1, 2 o 3")
+        continue
+    }
+    string[] instruccion = new string[3]
+    instruccion[0] = marca
+    instruccion[1] = (string) x
+    instruccion[2] = (string) y
+    marcar(instruccion)
+    if(ganador(marca)){
+        return 1
+    } else if (sin_espacio()){
+        return 2
+    }
+
+    cambiar_turno()
+    return 0
+}
+
+func jugar(){
+    limpiar_tablero()
+    TURNO = True
+    var ENCABEZADO = "¡BIENVENIDOS!"
+    var INICIO = True
+    var aux
+    while(True){
+        if(!INICIO){
+            print("--------------------------------------------------")
+            if(TURNO){
+                ENCABEZADO = "Es el turno de " + NOMBRE_J1
+            } else {
+                ENCABEZADO = "Es el turno de " + NOMBRE_J2
+            }
+            print(ENCABEZADO)
+            imprimir_tablero()
+
+            if(TURNO){
+                aux = movimiento(NOMBRE_J1, MARCA_J1)
+                if(aux == 0){
+                    continue
+                } else if (aux == 1){
+                    print("--------------------------------------------------")
+                    print("¡Felicitaciones, " + NOMBRE_J1 + "! ¡Eres el ganador!")
+                    imprimir_tablero()
+                    break
+                } else {
+                    print("--------------------------------------------------")
+                    print("No quedan más posiciones disponibles")
+                    imprimir_tablero()
+                    break
+                }
+            } else {
+                aux = movimiento(NOMBRE_J2, MARCA_J2)
+                if(aux == 0){
+                    continue
+                } else if (aux == 1){
+                    print("--------------------------------------------------")
+                    print("¡Felicitaciones, " + NOMBRE_J2 + "! ¡Eres el ganador!")
+                    imprimir_tablero()
+                    break
+                } else {
+                    print("--------------------------------------------------")
+                    print("No quedan más posiciones disponibles")
+                    imprimir_tablero()
+                    break
+                }
+            }
+
+        } else {
+            print(ENCABEZADO)
+            print("Ingrese el nombre del Jugador 1")
+            NOMBRE_J1 = read()
+            print("Ingrese el nombre del Jugador 2")
+            NOMBRE_J2 = read()
+            INICIO = False
+        }
+    }
+}
+
+main(){
+    while(True){
+        jugar()
+        var op
+        while(True){
+            print("¿Desea continuar jugando? true/false")
+            op = read()
+            if(tolower(op) == "true"){
+                break
+            } else if (tolower(op) == "false") {
+                break
+            } else {
+                continue
+            }
+        }
+        if ((boolean) op){
+            continue
+        } else {
+            break
+        }
+    }
+}

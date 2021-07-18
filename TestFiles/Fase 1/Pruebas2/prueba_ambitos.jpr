@@ -1,0 +1,25 @@
+var a = 10;
+
+main(){
+
+	print(a);
+
+	var a = 20;
+
+	print(a);
+
+	if (a > 10){
+		a = 23;
+		var a = 3;
+		print(a)
+	}
+
+	print(a);
+
+}
+ 
+
+ 
+
+
+

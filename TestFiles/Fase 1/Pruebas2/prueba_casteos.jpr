@@ -1,0 +1,21 @@
+main(){
+
+	print("Hola");
+	print((int) 12.545);
+	print((int) 'a');
+	print((int) 12);
+	print((double) 13);
+	print((double) 'a');
+	print((char) 97);
+	print((string) 12);
+	print((string) 12.12);
+
+}
+ 
+
+ 
+
+
+ 
+
+

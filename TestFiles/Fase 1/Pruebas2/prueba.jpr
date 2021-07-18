@@ -1,0 +1,2 @@
+var hola = 0;
+print("hola");

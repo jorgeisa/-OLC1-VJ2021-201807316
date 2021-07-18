@@ -1,0 +1,12 @@
+main(){
+
+	print("Hola");
+
+	if (4>4+1){
+
+		print("Manaña es 4");
+	}
+
+}
+
+
